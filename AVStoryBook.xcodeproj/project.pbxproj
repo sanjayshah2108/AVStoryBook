@@ -15,6 +15,10 @@
 		CE1594EC1F9AA49A00EF06EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1594EB1F9AA49A00EF06EC /* main.m */; };
 		CE1594F61F9AA49A00EF06EC /* AVStoryBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1594F51F9AA49A00EF06EC /* AVStoryBookTests.m */; };
 		CE1595011F9AA49A00EF06EC /* AVStoryBookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1595001F9AA49A00EF06EC /* AVStoryBookUITests.m */; };
+		CE1595101F9AA55A00EF06EC /* CaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE15950F1F9AA55A00EF06EC /* CaptureViewController.m */; };
+		CE1595131F9AA56F00EF06EC /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1595121F9AA56F00EF06EC /* Story.m */; };
+		CE1595161F9AA63400EF06EC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1595151F9AA63400EF06EC /* AVFoundation.framework */; };
+		CE15951C1F9BF84D00EF06EC /* MyPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE15951B1F9BF84D00EF06EC /* MyPageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		CE1594FC1F9AA49A00EF06EC /* AVStoryBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVStoryBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1595001F9AA49A00EF06EC /* AVStoryBookUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVStoryBookUITests.m; sourceTree = "<group>"; };
 		CE1595021F9AA49A00EF06EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE15950E1F9AA55A00EF06EC /* CaptureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaptureViewController.h; sourceTree = "<group>"; };
+		CE15950F1F9AA55A00EF06EC /* CaptureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaptureViewController.m; sourceTree = "<group>"; };
+		CE1595111F9AA56F00EF06EC /* Story.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Story.h; sourceTree = "<group>"; };
+		CE1595121F9AA56F00EF06EC /* Story.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Story.m; sourceTree = "<group>"; };
+		CE1595151F9AA63400EF06EC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CE15951A1F9BF84D00EF06EC /* MyPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPageViewController.h; sourceTree = "<group>"; };
+		CE15951B1F9BF84D00EF06EC /* MyPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1595161F9AA63400EF06EC /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +97,7 @@
 				CE1594F41F9AA49A00EF06EC /* AVStoryBookTests */,
 				CE1594FF1F9AA49A00EF06EC /* AVStoryBookUITests */,
 				CE1594DA1F9AA49A00EF06EC /* Products */,
+				CE1595141F9AA63400EF06EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +114,17 @@
 		CE1594DB1F9AA49A00EF06EC /* AVStoryBook */ = {
 			isa = PBXGroup;
 			children = (
+				CE15951A1F9BF84D00EF06EC /* MyPageViewController.h */,
+				CE15951B1F9BF84D00EF06EC /* MyPageViewController.m */,
 				CE1594DC1F9AA49A00EF06EC /* AppDelegate.h */,
 				CE1594DD1F9AA49A00EF06EC /* AppDelegate.m */,
 				CE1594DF1F9AA49A00EF06EC /* ViewController.h */,
 				CE1594E01F9AA49A00EF06EC /* ViewController.m */,
 				CE1594E21F9AA49A00EF06EC /* Main.storyboard */,
+				CE15950E1F9AA55A00EF06EC /* CaptureViewController.h */,
+				CE15950F1F9AA55A00EF06EC /* CaptureViewController.m */,
+				CE1595111F9AA56F00EF06EC /* Story.h */,
+				CE1595121F9AA56F00EF06EC /* Story.m */,
 				CE1594E51F9AA49A00EF06EC /* Assets.xcassets */,
 				CE1594E71F9AA49A00EF06EC /* LaunchScreen.storyboard */,
 				CE1594EA1F9AA49A00EF06EC /* Info.plist */,
@@ -130,6 +149,14 @@
 				CE1595021F9AA49A00EF06EC /* Info.plist */,
 			);
 			path = AVStoryBookUITests;
+			sourceTree = "<group>";
+		};
+		CE1595141F9AA63400EF06EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE1595151F9AA63400EF06EC /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +293,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1594E11F9AA49A00EF06EC /* ViewController.m in Sources */,
+				CE1595101F9AA55A00EF06EC /* CaptureViewController.m in Sources */,
 				CE1594EC1F9AA49A00EF06EC /* main.m in Sources */,
+				CE15951C1F9BF84D00EF06EC /* MyPageViewController.m in Sources */,
+				CE1595131F9AA56F00EF06EC /* Story.m in Sources */,
 				CE1594DE1F9AA49A00EF06EC /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
